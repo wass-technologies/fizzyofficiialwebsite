@@ -20,11 +20,11 @@ const alpino = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   openGraph: {
-    images: ['/og-image.jpg'],
+    images: ['/shabarablewebapps.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og-image.jpg'],
+    images: ['/shabarablewebapps.png'],
   },
 };
 

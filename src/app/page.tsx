@@ -19,11 +19,16 @@ export async function generateMetadata(): Promise<Metadata> {
   const home = await client.getByUID("page", "home");
 
   return {
-    title: asText(home.data.title),
+    title: `${asText(home.data.title)} - Designed By WASS Team`,
     description: home.data.meta_description,
     openGraph: {
-      title: home.data.meta_title ?? undefined,
-      images: [{ url: home.data.meta_image.url ?? "" }],
+      title: `${home.data.meta_title || asText(home.data.title)} - Designed By WASS Team`,
+      images: [{ url: "/shabarablewebapps.png" }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${home.data.meta_title || asText(home.data.title)} - Designed By WASS Team`,
+      images: ["/shabarablewebapps.png"],
     },
   };
 }
