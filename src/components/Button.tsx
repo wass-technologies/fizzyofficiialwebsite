@@ -1,7 +1,6 @@
 "use client";
 
 import { LinkField } from "@prismicio/client";
-import { PrismicNextLink } from "@prismicio/next";
 import clsx from "clsx";
 
 type Props = {
@@ -13,7 +12,7 @@ type Props = {
 export default function Button({ buttonLink, buttonText, className }: Props) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    alert("🚧 Site is under development! 🛠️ Coming soon... 🎉");
+    alert("🚧 Site is under development! 🛠️\n\n🚀 Product will be live on March 24, 2026\n\n💜 By WASS Team");
   };
 
   return (
